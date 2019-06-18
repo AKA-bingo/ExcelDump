@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -16,14 +17,14 @@ func main() {
 		log.Fatalf("获取源数据文件夹下文件失败, err:%v", err)
 	}
 
-	//文件分隔符
-	//string(os.PathSeparator)
-
+	fmt.Println("Start Convent")
 	for _, file := range files {
-		if !file.IsDir() && strings.HasSuffix(file.Name(), config.Conf.ConventExt) {
+		if !file.IsDir() && strings.HasSuffix(file.Name(), config.Conf.ConventExt) && !strings.HasPrefix(file.Name(), "~$") {
 			service.FileConvent(config.Conf.SourceDir + string(os.PathSeparator) + file.Name())
 		}
 
 	}
-
+	fmt.Print("Convent done\nInput anything to exist program:")
+	var pause string
+	fmt.Scan(&pause)
 }

@@ -1,8 +1,11 @@
+#Debug日志位置 需要自行创建文件夹
+DIR_LOG: .\log\debug.log
+
 #xlsx文件中标识导出路径的sheet名
 DIR_SHEET: $输出路径
 
 #源数据文件夹位置,执行程序时导出目录下所有设置的文件数据
-SOURCE_DIR: ./exceldata
+SOURCE_DIR: .\exceldata
 
 #转换的文件后缀
 CONVENT_EXT: .xlsx
@@ -15,4 +18,4 @@ TABLE_NAME_POS: A4
 
 #导出内容的初始位置行列值
 CONTENT_START_ROW: 3
-CONTENT_START_COLUMN: B
+CONTENT_START_COLUMN: 2

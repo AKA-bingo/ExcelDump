@@ -1,0 +1,18 @@
+PoolId	MagicName	MA1Min	MA1Max	MA2Min	MA2Max	MA3Min	MA3Max	Weiget
+池Id	属性类型	属性小	属性大	属性小	属性大	属性小	属性大	权重
+11001	attackrating_v	1	2					500
+11001	attackrating_v	3	5					200
+11002	attackrating_v	6	10					100
+11002	attackrating_v	11	15					500
+11002	attackrating_v	16	20					200
+12001	attackrating_v	10	20					500
+12001	attackrating_v	30	50					200
+12002	attackrating_v	60	100					100
+12002	attackrating_v	110	150					500
+12002	attackrating_v	160	200					200
+13001	attackrating_v	500	600					5000
+13001	attackrating_v	600	700					3000
+13001	attackrating_v	700	800					2000
+13002	attackrating_v	1000	1200					5000
+13002	attackrating_v	1200	1500					500
+13002	attackrating_v	1500	2000					100

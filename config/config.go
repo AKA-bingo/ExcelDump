@@ -9,14 +9,12 @@ import (
 )
 
 type conf struct {
-	DirLog             string `yaml:"DIR_LOG"`
-	DirSheet           string `yaml:"DIR_SHEET"`
-	SourceDir          string `yaml:"SOURCE_DIR"`
-	ConventExt         string `yaml:"CONVENT_EXT"`
-	OutPutExt          string `yaml:"OUTPUT_EXT"`
-	TableNamePos       string `yaml:"TABLE_NAME_POS"`
-	ContentStartRow    int    `yaml:"CONTENT_START_ROW"`
-	ContentStartColumn int    `yaml:"CONTENT_START_COLUMN"`
+	DirLog       string `yaml:"DIR_LOG"`
+	DirSheet     string `yaml:"DIR_SHEET"`
+	SourceDir    string `yaml:"SOURCE_DIR"`
+	ConventExt   string `yaml:"CONVENT_EXT"`
+	OutPutExt    string `yaml:"OUTPUT_EXT"`
+	PositionName string `yaml:"POSITION_NAME"`
 }
 
 var Conf = new(conf)

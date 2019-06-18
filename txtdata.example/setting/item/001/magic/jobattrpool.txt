@@ -1,0 +1,14 @@
+PoolId	Job	Magic1Name	Magic1Attrib1Min	Magic1Attrib1Max	Magic1Attrib2Min	Magic1Attrib2Max	Magic1Attrib3Min	Magic1Attrib3Max	Magic2Name	Magic2Attrib1Min	Magic2Attrib1Max	Magic2Attrib2Min	Magic2Attrib2Max	Magic2Attrib3Min	Magic2Attrib3Max	Magic3Name	Magic3Attrib1Min	Magic3Attrib1Max	Magic3Attrib2Min	Magic3Attrib2Max	Magic3Attrib3Min	Magic3Attrib3Max
+池Id	职业	属性1	最小值	最大值	最小值	最大值	最小值	最大值	属性2	最小值	最大值	最小值	最大值	最小值	最大值	属性3	最小值	最大值	最小值	最大值	最小值	最大值
+1001	1	attackrating_v	1	5					attackrating_v	10	50											
+1001	1	attackrating_v	6	10					attackrating_v	60	100											
+1002	2	attackrating_v	11	15					attackrating_v	110	150											
+1002	2	attackrating_v	16	20					attackrating_v	160	200											
+1003	3	attackrating_v	21	25					attackrating_v	210	250											
+1003	3	attackrating_v	26	30					attackrating_v	260	300											
+2001	1	attackrating_v	31	35					attackrating_v	310	350											
+2001	1	attackrating_v	36	40					attackrating_v	360	400											
+2001	2	attackrating_v	41	45					attackrating_v	410	450											
+2001	2	attackrating_v	46	50					attackrating_v	460	500											
+2001	3	attackrating_v	51	55					attackrating_v	510	550											
+2001	3	attackrating_v	56	60					attackrating_v	560	600											

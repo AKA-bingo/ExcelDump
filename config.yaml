@@ -13,9 +13,5 @@ CONVENT_EXT: .xlsx
 #输出的文件后缀
 OUTPUT_EXT: .txt
 
-#表名位置
-TABLE_NAME_POS: A4
-
-#导出内容的初始位置行列值
-CONTENT_START_ROW: 3
-CONTENT_START_COLUMN: 2
+#定位标识名
+POSITION_NAME: string$name

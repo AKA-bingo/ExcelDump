@@ -44,13 +44,13 @@ func FileConvent(filePath string) {
 	}
 
 	sheets := file.GetSheetMap()
-	for _, sheet := range sheets {
-		if sheet == config.Conf.DirSheet {
+	for i := 0; i < len(sheets); i++ {
+		if sheets[i] == config.Conf.DirSheet {
 			continue
 		}
-		err := ConventSheet(file, sheet, ConventRule)
+		err := ConventSheet(file, sheets[i], ConventRule)
 		if err != nil {
-			log.Printf("ConventSheet(%v, %v, ConventRule) err:%v", file.Path, sheet, err)
+			log.Printf("ConventSheet(%v, %v, ConventRule) err:%v", file.Path, sheets[i], err)
 		}
 	}
 

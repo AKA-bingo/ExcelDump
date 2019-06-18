@@ -44,7 +44,7 @@ func FileConvent(filePath string) {
 	}
 
 	sheets := file.GetSheetMap()
-	for i := 0; i < len(sheets); i++ {
+	for i := 1; i <= len(sheets); i++ {
 		if sheets[i] == config.Conf.DirSheet {
 			continue
 		}
@@ -83,7 +83,11 @@ func GetOutPutRule(file *excelize.File) (map[string]map[string]string, error) {
 		return nil, err
 	}
 
-	rowPos, columnPos, err := Position(file, config.Conf.DirSheet) //3, 0
+	rowPos, columnPos, err := Position(file, config.Conf.DirSheet)
+	if err != nil {
+		log.Printf("Position(%v, %v) err:%v", filepath.Base(file.Path), config.Conf.DirSheet, err)
+		return nil, err
+	}
 
 	if len(rows) <= rowPos+1 {
 		return nil, ErrConventRouteNotFound
